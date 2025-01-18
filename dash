@@ -31,19 +31,6 @@ fi
 echo -e "${CYAN}$ascii_art${NC}"
 
 
-# Function to display messages
-echo_message() {
-    echo -e "\033[1;32m$1\033[0m"
-}
-
-echo_message "Do you want to install the hydra-dashboard? (yes/no)"
-read answer
-
-if [ "$answer" != "yes" ]; then
-    echo_message "Installation aborted."
-    exit 0
-fi
-
 echo_message "* Installing Dependencies"
 
 # Update package list and install dependencies
