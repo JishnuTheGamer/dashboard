@@ -47,7 +47,7 @@ echo_message "* Installing Files"
 # Create directory, clone repository, and install files
 mkdir -p Oversee
 cd Oversee || { echo_message "Failed to change directory to skyport"; exit 1; }
-git clone https://github.com/hydren-dev/Oversee.git
+git clone https://github.com/draco-labes/oversee-fixed.git
 cd Oversee || { echo_message "Failed to change directory to panel"; exit 1; }
 npm install
 
